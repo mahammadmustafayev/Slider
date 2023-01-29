@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider{
+  width: 100%;
+  height: 500px;
+  
+}
+.slider .container{
+  position: relative;
+  width: 480px;
+  height: 640px;
+  margin: 50px auto;
+}
+.arrows{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 130%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999999;
+}
+.arrows img{
+   filter: invert(1);
+}
+.images{
+  display: flex;
+  position: relative;
+}
+.image{
+ position: absolute;
+ opacity: 0;
+ transition: opacity 0.5 ease;
+}
+.active{
+ opacity: 1;
+}
